@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<CommandsVisibility>
+		<Command name="Catalog.ЕдиницыИзмерения.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Склад">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Номенклатура.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Склад">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="0:ab82ed9a-d98c-45a9-a1b1-bd4f4e133042">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Склад">true</xr:Value>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+</CommandInterface>

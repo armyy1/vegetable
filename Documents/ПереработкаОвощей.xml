@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Document uuid="9fd3f86c-95e0-42d8-8160-6c986b264f3f">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ПереработкаОвощей" category="Object">
+				<xr:TypeId>8a821a02-57be-4ed9-8f8c-c7b6d4a25a17</xr:TypeId>
+				<xr:ValueId>a8d3d9d9-79de-4ece-a7d1-7e34f5e30fd3</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ПереработкаОвощей" category="Ref">
+				<xr:TypeId>8cd8e396-7e4f-4101-a3f0-39f3482d27be</xr:TypeId>
+				<xr:ValueId>73a1db3f-69a9-4609-9f29-5fd34b812a3b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ПереработкаОвощей" category="Selection">
+				<xr:TypeId>287fffe4-7590-4458-9d13-7fbb8e4a580d</xr:TypeId>
+				<xr:ValueId>8062df50-5493-4a45-ba5f-2f7b13cb1f76</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ПереработкаОвощей" category="List">
+				<xr:TypeId>fb368f66-9e6e-4de6-8957-b6264b50f5d3</xr:TypeId>
+				<xr:ValueId>31c9d91a-aecf-4ec2-a16d-ef68df339ef7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ПереработкаОвощей" category="Manager">
+				<xr:TypeId>f7dc5dd7-1c50-44bd-8219-9527986df9c7</xr:TypeId>
+				<xr:ValueId>5f5867cc-b4ec-4dc6-bf26-b6694f96b397</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ПереработкаОвощей</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переработка овощей</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<Numerator/>
+			<NumberType>String</NumberType>
+			<NumberLength>11</NumberLength>
+			<NumberAllowedLength>Variable</NumberAllowedLength>
+			<NumberPeriodicity>Nonperiodical</NumberPeriodicity>
+			<CheckUnique>true</CheckUnique>
+			<Autonumbering>true</Autonumbering>
+			<StandardAttributes>
+				<xr:StandardAttribute name="Posted"/>
+				<xr:StandardAttribute name="Ref"/>
+				<xr:StandardAttribute name="DeletionMark"/>
+				<xr:StandardAttribute name="Date"/>
+				<xr:StandardAttribute name="Number"/>
+			</StandardAttributes>
+			<Characteristics/>
+			<BasedOn/>
+			<InputByString>
+				<xr:Field>Document.ПереработкаОвощей.StandardAttribute.Number</xr:Field>
+			</InputByString>
+			<CreateOnInput>Use</CreateOnInput>
+			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
+			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
+			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
+			<DefaultObjectForm>Document.ПереработкаОвощей.Form.ФормаДокумента</DefaultObjectForm>
+			<DefaultListForm>Document.ПереработкаОвощей.Form.ФормаСписка</DefaultListForm>
+			<DefaultChoiceForm/>
+			<AuxiliaryObjectForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<Posting>Allow</Posting>
+			<RealTimePosting>Allow</RealTimePosting>
+			<RegisterRecordsDeletion>AutoDeleteOnUnpost</RegisterRecordsDeletion>
+			<RegisterRecordsWritingOnPost>WriteSelected</RegisterRecordsWritingOnPost>
+			<SequenceFilling>AutoFill</SequenceFilling>
+			<RegisterRecords>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ОстаткиТоваров</xr:Item>
+			</RegisterRecords>
+			<PostInPrivilegedMode>true</PostInPrivilegedMode>
+			<UnpostInPrivilegedMode>true</UnpostInPrivilegedMode>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<DataLockFields/>
+			<DataLockControlMode>Managed</DataLockControlMode>
+			<FullTextSearch>Use</FullTextSearch>
+			<ObjectPresentation/>
+			<ExtendedObjectPresentation/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+			<DataHistory>DontUse</DataHistory>
+			<UpdateDataHistoryImmediatelyAfterWrite>false</UpdateDataHistoryImmediatelyAfterWrite>
+			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="2ad12078-a994-41fa-8a6f-6d4fe902d72c">
+				<Properties>
+					<Name>Организация</Name>
+					<Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Организация</v8:content></v8:item></Synonym>
+					<Comment/>
+					<Type><v8:TypeSet>cfg:DefinedType.Организация</v8:TypeSet></Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="7776031f-70ad-4123-9e68-9f3078cefedf">
+				<Properties>
+					<Name>СкладИсточник</Name>
+					<Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Склад источник</v8:content></v8:item></Synonym>
+					<Comment/>
+					<Type><v8:Type>cfg:CatalogRef.МестаХранения</v8:Type></Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="2fb47842-1301-4e1f-b24b-a51ca76270ce">
+				<Properties>
+					<Name>СкладПриемник</Name>
+					<Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Склад приемник</v8:content></v8:item></Synonym>
+					<Comment/>
+					<Type><v8:Type>cfg:CatalogRef.МестаХранения</v8:Type></Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="34846cd8-7315-49cf-8fe1-a9f7f7d53476">
+				<Properties>
+					<Name>Ответственный</Name>
+					<Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Ответственный</v8:content></v8:item></Synonym>
+					<Comment/>
+					<Type><v8:Type>cfg:CatalogRef.Пользователи</v8:Type></Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="6f0610e7-9b74-43cf-bcbf-fbe348d87df3">
+				<Properties>
+					<Name>Комментарий</Name>
+					<Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Комментарий</v8:content></v8:item></Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers><v8:Length>0</v8:Length><v8:AllowedLength>Variable</v8:AllowedLength></v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Form>ФормаДокумента</Form>
+			<Form>ФормаСписка</Form>
+			<TabularSection uuid="80998afd-5678-44d8-b90e-d2724613d754">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.ПереработкаОвощей.Товары" category="TabularSection">
+						<xr:TypeId>53f0ad8e-ed4c-4f86-8c37-4e6f0d05a00a</xr:TypeId>
+						<xr:ValueId>f55e26c3-cf7a-427c-ad3f-8da501b1a73f</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.ПереработкаОвощей.Товары" category="TabularSectionRow">
+						<xr:TypeId>baa47ebd-2f58-4819-b5ee-389dfadce7b7</xr:TypeId>
+						<xr:ValueId>2f19a1e9-4aa1-43a8-8d28-b3e8ae92e914</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<Name>Товары</Name>
+					<Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Товары</v8:content></v8:item></Synonym>
+					<Comment/>
+					<ToolTip/>
+					<FillChecking>DontCheck</FillChecking>
+					<StandardAttributes>
+						<xr:StandardAttribute name="LineNumber"/>
+					</StandardAttributes>
+					<LineNumberLength>5</LineNumberLength>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="f7569876-80ba-4544-a6a1-54d82ef57eb0">
+						<Properties>
+							<Name>НоменклатураСырье</Name>
+							<Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Номенклатура сырье</v8:content></v8:item></Synonym>
+							<Comment/>
+							<Type><v8:Type>cfg:CatalogRef.Номенклатура</v8:Type></Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="f4f2ac5d-f97c-4c04-b10c-e2df8b1698af">
+						<Properties>
+							<Name>КоличествоСырье</Name>
+							<Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Количество сырье</v8:content></v8:item></Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers><v8:Digits>15</v8:Digits><v8:FractionDigits>3</v8:FractionDigits><v8:AllowedSign>Nonnegative</v8:AllowedSign></v8:NumberQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="5f51eff5-59e0-4895-85a7-910f9b1d08d5">
+						<Properties>
+							<Name>НоменклатураПродукция</Name>
+							<Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Номенклатура продукция</v8:content></v8:item></Synonym>
+							<Comment/>
+							<Type><v8:Type>cfg:CatalogRef.Номенклатура</v8:Type></Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="65016fbc-09d0-46fd-b46f-0de179da13f4">
+						<Properties>
+							<Name>КоличествоПродукция</Name>
+							<Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Количество продукция</v8:content></v8:item></Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers><v8:Digits>15</v8:Digits><v8:FractionDigits>3</v8:FractionDigits><v8:AllowedSign>Nonnegative</v8:AllowedSign></v8:NumberQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="4f2f67a8-4d0a-40ac-bfef-237d9da332a2">
+						<Properties>
+							<Name>КоличествоПотерь</Name>
+							<Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Количество потерь</v8:content></v8:item></Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers><v8:Digits>15</v8:Digits><v8:FractionDigits>3</v8:FractionDigits><v8:AllowedSign>Nonnegative</v8:AllowedSign></v8:NumberQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="577c542f-1f47-44e9-92b4-8c7ee44e6677">
+						<Properties>
+							<Name>ВидОпераций</Name>
+							<Synonym><v8:item><v8:lang>ru</v8:lang><v8:content>Вид операций</v8:content></v8:item></Synonym>
+							<Comment/>
+							<Type><v8:Type>cfg:EnumRef.ВидыОперации</v8:Type></Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

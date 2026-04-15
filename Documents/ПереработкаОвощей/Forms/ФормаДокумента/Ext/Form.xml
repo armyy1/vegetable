@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаНомерДата" id="1">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ChildItems>
+				<InputField name="Номер" id="2">
+					<DataPath>Объект.Number</DataPath>
+				</InputField>
+				<InputField name="Дата" id="3">
+					<DataPath>Объект.Date</DataPath>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Организация" id="4">
+			<DataPath>Объект.Организация</DataPath>
+		</InputField>
+		<UsualGroup name="ГруппаСклады" id="5">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ChildItems>
+				<InputField name="СкладИсточник" id="6">
+					<DataPath>Объект.СкладИсточник</DataPath>
+				</InputField>
+				<InputField name="СкладПриемник" id="7">
+					<DataPath>Объект.СкладПриемник</DataPath>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Товары" id="8">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<DataPath>Объект.Товары</DataPath>
+			<ChildItems>
+				<LabelField name="ТоварыНомерСтроки" id="9">
+					<DataPath>Объект.Товары.LineNumber</DataPath>
+				</LabelField>
+				<InputField name="ТоварыНоменклатураСырье" id="10">
+					<DataPath>Объект.Товары.НоменклатураСырье</DataPath>
+				</InputField>
+				<InputField name="ТоварыКоличествоСырье" id="11">
+					<DataPath>Объект.Товары.КоличествоСырье</DataPath>
+					<Events>
+						<Event name="OnChange">ТоварыКоличествоСырьеПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ТоварыНоменклатураПродукция" id="12">
+					<DataPath>Объект.Товары.НоменклатураПродукция</DataPath>
+				</InputField>
+				<InputField name="ТоварыКоличествоПродукция" id="13">
+					<DataPath>Объект.Товары.КоличествоПродукция</DataPath>
+				</InputField>
+				<InputField name="ТоварыКоличествоПотерь" id="14">
+					<DataPath>Объект.Товары.КоличествоПотерь</DataPath>
+					<Events>
+						<Event name="OnChange">ТоварыКоличествоПотерьПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ТоварыВидОпераций" id="15">
+					<DataPath>Объект.Товары.ВидОпераций</DataPath>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<InputField name="Комментарий" id="16">
+			<DataPath>Объект.Комментарий</DataPath>
+		</InputField>
+		<InputField name="Ответственный" id="17">
+			<DataPath>Объект.Ответственный</DataPath>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ПереработкаОвощей</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>
