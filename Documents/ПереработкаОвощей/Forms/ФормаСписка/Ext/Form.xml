@@ -5,6 +5,7 @@
 	<ChildItems>
 		<Table name="Список" id="1">
 			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
 			<DataPath>Список</DataPath>
 			<ChildItems>
 				<LabelField name="Дата" id="2">
